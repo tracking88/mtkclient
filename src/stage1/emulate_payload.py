@@ -208,7 +208,8 @@ def do_generic_emu_setup(mu, reg, brom_base, field):
         mu.hook_add(UC_HOOK_CODE, hook_code, user_data=callback, begin=address, end=address)
 
     def send_usb_response(regs):
-        pc = reg["LR"]
+        p
+        c = reg["LR"]
         print("send_usb_response %08X" % pc)
         return 0
 
